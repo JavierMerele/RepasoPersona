@@ -8,7 +8,7 @@ public class Cuenta : Dinero
     public double Monto { get; private set; }
 }
 
-public Persona(double saldo, double Monto)
+public Cuenta(double saldo, double monto, int cbu)
 {
     CBU = ++_contador;
     Saldo = saldo;
