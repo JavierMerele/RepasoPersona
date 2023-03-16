@@ -24,7 +24,7 @@ public void Debitar(double monto)
                 throw new InvalidOperationException("El monto supera el saldo.");
             Saldo -= monto;
         }
-        public void Acreditar(double monto)
+public void Acreditar(double monto)
         {
             if (monto <= 0)
                 throw new ArgumentException("El monto tiene que ser mayor a cero.");
