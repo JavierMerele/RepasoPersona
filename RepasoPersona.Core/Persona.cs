@@ -15,7 +15,7 @@ namespace RepasoPersona.Core
             Apellido = apellido;
             Efectivo = efectivo;
             Monto = monto;
-        } 
+        }
 
         public void Debitar(double monto)
         {

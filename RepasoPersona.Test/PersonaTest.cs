@@ -8,7 +8,7 @@ namespace RepasoPersona.Test
     {
         public Persona Pepito { get; set; }
 
-        public PersonaTest() => Pepito = new Persona("Juan", "Gomez", 0);
+        public PersonaTest() => Pepito = new Persona("Juan", "Gomez", 0, 0);
 
         [Fact]
         public void Constructor()
@@ -16,6 +16,7 @@ namespace RepasoPersona.Test
             Assert.Equal("Juan", Pepito.Nombre);
             Assert.Equal("Gomez", Pepito.Apellido);
             Assert.Equal(0, Pepito.Efectivo);
+            Assert.Equal(0, Pepito.Monto);
         }
 
         [Fact]
@@ -23,7 +24,7 @@ namespace RepasoPersona.Test
         {
             double esperado = 1000;
             Pepito.Acreditar(esperado);
-            
+
             Assert.Equal(esperado, Pepito.Efectivo, 3);
         }
 
